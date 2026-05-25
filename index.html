@@ -27,20 +27,26 @@ code { background: #f6f8fa; padding: 1px 6px; border-radius: 4px; font-size: 0.9
 
 <h2>Headline runs</h2>
 
-<a class="card" href="argmax.html">
-  <strong>Argmax cluster representative (Approach 1, baseline)</strong>
-  <span class="tag">N=755</span><span class="tag">τ=1.0</span><span class="tag">classical MAP</span>
-  <div class="muted">Top-1 ≤ 20° on 31.4 % of probes; Best-in-top-K ≤ 20° on 88.5 %.</div>
-</a>
+<p class="muted">All 768 probes are available, split into 4 parts of 192 probes each so that no single file exceeds the GitHub size limit.</p>
 
-<a class="card" href="posterior_mean.html">
-  <strong>Posterior-mean cluster representative (Approach 2, MUPF-style)</strong>
-  <span class="tag">N=755</span><span class="tag">τ=1.0</span><span class="tag">Vezzani 2017 + Markley 2007</span>
-  <div class="muted">Top-1 ≤ 20° on 29.9 % of probes; Best-in-top-K ≤ 20° on 88.2 %.</div>
-</a>
+<h3 style="margin-top:1.2em;font-size:1.05em;">Argmax cluster representative (Approach 1, baseline)</h3>
+<span class="tag">N=755 (768 incl. degenerate)</span><span class="tag">τ=1.0</span><span class="tag">classical MAP</span>
+<div class="muted" style="margin:8px 0 10px;">Top-1 ≤ 20° on 31.4 % of probes; Best-in-top-K ≤ 20° on 88.5 %.</div>
+<a class="card" href="argmax_part1.html"><strong>Part 1 — probes 0–191</strong></a>
+<a class="card" href="argmax_part2.html"><strong>Part 2 — probes 192–383</strong></a>
+<a class="card" href="argmax_part3.html"><strong>Part 3 — probes 384–575</strong></a>
+<a class="card" href="argmax_part4.html"><strong>Part 4 — probes 576–767</strong></a>
+
+<h3 style="margin-top:1.8em;font-size:1.05em;">Posterior-mean cluster representative (Approach 2, MUPF-style)</h3>
+<span class="tag">N=755 (768 incl. degenerate)</span><span class="tag">τ=1.0</span><span class="tag">Vezzani 2017 + Markley 2007</span>
+<div class="muted" style="margin:8px 0 10px;">Top-1 ≤ 20° on 29.9 % of probes; Best-in-top-K ≤ 20° on 88.2 %.</div>
+<a class="card" href="posterior_mean_part1.html"><strong>Part 1 — probes 0–191</strong></a>
+<a class="card" href="posterior_mean_part2.html"><strong>Part 2 — probes 192–383</strong></a>
+<a class="card" href="posterior_mean_part3.html"><strong>Part 3 — probes 384–575</strong></a>
+<a class="card" href="posterior_mean_part4.html"><strong>Part 4 — probes 576–767</strong></a>
 
 <h2>How to use</h2>
-<p>Open either viewer in a modern browser (Chrome / Firefox / Edge / Safari). Use the probe dropdown to step through individual grasps; use the mouse to rotate the 3D scene. The two viewers share the same external 768-grasp test set, so the same <code>graspqp_&lt;N&gt;</code> probe can be compared side by side across the two cluster-representative variants.</p>
+<p>Open any viewer in a modern browser (Chrome / Firefox / Edge / Safari). Use the probe dropdown to step through individual grasps; use the mouse to rotate the 3D scene. Argmax and posterior-mean parts share the same external 768-grasp test set in the same order, so the same <code>graspqp_&lt;N&gt;</code> probe can be compared side by side by opening the matching part on both sides.</p>
 
 <div class="note">
 <strong>Supplementary material for the thesis</strong> "Single-shot in-hand pose estimation of a known ellipsoid via manifold particle filter and contrastive learning" (SDU, 2026). The argmax vs posterior-mean comparison is the central ablation reported in <em>Section: Results — Argmax vs posterior-mean cluster representative</em>.
