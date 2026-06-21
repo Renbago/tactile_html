@@ -52,10 +52,10 @@ code { background: #f6f8fa; padding: 1px 6px; border-radius: 4px; font-size: 0.9
 
 <h2>Defence viewers</h2>
 <span class="tag">scalar</span><span class="tag">vector</span><span class="tag">oracle</span><span class="tag">rank-1</span>
-<div class="muted" style="margin:8px 0 10px;">Compact pages used in the oral defence to separate the scalar sensor limit, the true-normal vector ablation, and the full MuJoCo-contact oracle.</div>
-<a class="card" href="sensor_triptych.html"><strong>Scalar vs vector vs oracle triptych</strong><span class="muted">Same grasp, three observation rungs, shown side by side.</span></a>
-<a class="card" href="rank1_selection_proof.html"><strong>Rank-1 selection proof</strong><span class="muted">Cases where the right mode is present versus cases where single-shot geometry is ambiguous.</span></a>
-<a class="card" href="failure_gallery.html"><strong>Failure gallery</strong><span class="muted">Visual inspection set for remaining MPF failures and data-quality limits.</span></a>
+<div class="muted" style="margin:8px 0 10px;">Oral-defence pages using the same physical inspection layers as the side-by-side viewer: Shadow Hand geometry, active contacts, fired-but-rejected taxels, and contact normals.</div>
+<a class="card" href="sensor_triptych.html"><strong>Scalar vs vector vs oracle triptych</strong><span class="muted">Same grasp, three observation rungs, with hand/taxel overlays in each pane.</span></a>
+<a class="card" href="rank1_selection_proof.html"><strong>Rank-1 selection proof</strong><span class="muted">Cases where the right mode is present versus cases where single-shot geometry is ambiguous, shown against the hand geometry.</span></a>
+<a class="card" href="failure_gallery.html"><strong>Failure gallery</strong><span class="muted">Visual inspection set for remaining MPF failures, data-quality limits, and hand-penetration artefacts.</span></a>
 
 <h2>How to use</h2>
 <p>Open any viewer in a modern browser (Chrome / Firefox / Edge / Safari). Use the probe dropdown to step through individual grasps; use the mouse to rotate the 3D scene. Argmax and posterior-mean parts share the same external 768-grasp test set in the same order, so the same <code>graspqp_&lt;N&gt;</code> probe can be compared side by side by opening the matching part on both sides.</p>
